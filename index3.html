@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!--Web apps//Hybrids apps: Ionic/Cordova-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            -webkit-flex-flow: row wrap;
+        }
+
+        .columna1,
+        .columna2,
+        .columna3,
+        .columna4,
+        .columna5 {
+            width: 100%;
+
+        }
+
+        .columna1 {
+            background: red;
+        }
+
+        .columna2 {
+            background: blue;
+        }
+
+        .columna3 {
+            background: olive;
+        }
+
+        .columna4 {
+            background: yellow;
+        }
+
+        .columna5 {
+            background: orange;
+        }
+
+        @media (min-width: 500px) {
+            .columna2,
+            .columna3,
+            .columna4,
+            .columna5{
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 800px) {
+            .columna1{
+                width: 60%;
+            }
+            .columna2{
+                width: 40%;
+            }
+            .columna3,
+            .columna4,
+            .columna5{
+                width: 50%;
+            }
+
+            .container {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <section class="columna1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, saepe, ullam? Atque delectus in ipsum numquam. Ad aliquam laborum, odio omnis quidem reiciendis sit soluta voluptates! Dolore illum, nesciunt! Libero.</section>
+    <section class="columna2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt eaque exercitationem molestiae neque quae quam quas, quisquam ratione repellendus repudiandae sequi vero. At cupiditate distinctio doloribus quae, quis repudiandae.</section>
+    <section class="columna3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus cum cupiditate delectus deleniti dignissimos ducimus ea expedita fugiat, illum iste laudantium nemo officia omnis optio, perspiciatis, repellat saepe velit!</section>
+    <section class="columna4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab error perspiciatis praesentium quaerat sapiente! Doloremque eaque illo molestias nostrum placeat repellat voluptas? Amet dolor omnis quia quos sit, suscipit ullam?</section>
+    <section class="columna5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cupiditate debitis dolor doloremque, ea error eum hic incidunt libero natus nemo nostrum odio omnis quidem quod ratione rem saepe vitae?</section>
+</div>
+</body>
+</html>
