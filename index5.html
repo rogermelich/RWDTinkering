@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!--Web apps//Hybrids apps: Ionic/Cordova-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            -webkit-flex-flow: row wrap;
+        }
+
+        .container-inner {
+            width: 100%;
+        }
+
+        .columna1,
+        .columna2,
+        .columna3 {
+            width: 100%;
+
+        }
+
+        .columna1 {
+            background: red;
+        }
+
+        .columna2 {
+            background: blue;
+        }
+
+        .columna3 {
+            background: olive;
+        }
+
+        @media (min-width: 600px) {
+            .columna1 {
+                width: 15%;
+                height: 100vh; /*vh significa view port*/
+            }
+
+            .container-inner {
+                width: 85%;
+            }
+        }
+
+        @media (min-width: 800px) {
+            .container {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <section class="columna1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, saepe, ullam? Atque delectus in ipsum numquam. Ad aliquam laborum, odio omnis quidem reiciendis sit soluta voluptates! Dolore illum, nesciunt! Libero.</section>
+    <div class="container-inner">
+    <section class="columna2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt eaque exercitationem molestiae neque quae quam quas, quisquam ratione repellendus repudiandae sequi vero. At cupiditate distinctio doloribus quae, quis repudiandae.</section>
+    <section class="columna3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus cum cupiditate delectus deleniti dignissimos ducimus ea expedita fugiat, illum iste laudantium nemo officia omnis optio, perspiciatis, repellat saepe velit!</section>
+    </div>
+</div>
+</body>
+</html>
